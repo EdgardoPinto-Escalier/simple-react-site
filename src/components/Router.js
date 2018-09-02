@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './Header';
-import NavBar from './NavBar';
-import Ebooks from './Ebooks';
-import About from './About';
-import Error from './Error';
-import SingleEbook from './SingleEbook';
-import Contact from './Contact';
+import Header from './Header/Header';
+import NavBar from './NavBar/NavBar';
+import Ebooks from './Ebooks/Ebooks';
+import About from './About/About';
+import Error from './Error/Error';
+import SingleEbook from './SingleEbook/SingleEbook';
+import Contact from './Contact/Contact';
 import dataEbooks from '../data/data.json';
 
 

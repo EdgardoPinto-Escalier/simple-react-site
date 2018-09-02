@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Ebook from './Ebook';
+import Ebook from '../Ebook/Ebook';
 import './Ebooks.css';
 
 class Ebooks extends Component {
