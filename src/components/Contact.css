@@ -1,0 +1,46 @@
+form {
+  margin-top: 40px;
+  border: 5px solid #ccc;
+  background-color: white;
+  padding: 2rem;
+}
+form legend {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.inputField {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.inputField label {
+  flex: 0 0 150px;
+  font-weight: bold;
+}
+.inputField input[type="email"],
+.inputField input[type="text"],
+.inputField textarea{
+  flex:1;
+  padding: 1rem;
+}
+.inputField input[type="submit"] {
+  background-color: #39383a;
+  color: white;
+  padding: .5rem 2rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.inputField input[type="submit"]:hover {
+  cursor: pointer;
+  background-color:rgb(95, 94, 94);
+  color: #fff;
+}
+.send {
+  justify-content: flex-end;
+}
