@@ -1,15 +1,15 @@
-## SIMPLE REACT E-BOOKSTORE
+## Simple React E-Bookstore
 
-This is a very simple static react site with no functionality at all. It was created just for training purposes.
+This is a very simple static react site with no functionality at all. It was created just for training purposes only.
 
-## SOME OF THE THINGS USED INCLUDES:
+## Some of the things used for this project:
 
 - React router 4
 - React components
 - React state
 - Filtering with React
 
-## DEMO
+## Demo
 
 [React E-Bookstore](http://react-bookstore.web-projects.work/)
 
