@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ebook from '../Ebook/Ebook';
+import Searchbar from '../Searchbar/Searchbar';
 import './Ebooks.css';
 
 class Ebooks extends Component {
@@ -8,6 +9,9 @@ class Ebooks extends Component {
     return (
         <div className="ebooks">
             <h2>OUR EBOOKS</h2>
+            <Searchbar 
+                searching={this.props.searchingEbook}
+            />
             <ul className="ebooksList">
                 {Object.keys(this.props.ebooks).map(ebook => (
                     <Ebook

@@ -13,7 +13,8 @@ import dataEbooks from '../data/data.json';
 class Router extends Component {
 
   state = {
-    ebooks: []
+    ebooks: [],
+    searchTerm : ''
   }
 
   componentWillMount() {
@@ -22,7 +23,32 @@ class Router extends Component {
     })
   }
 
+  searchingEbook = (searching) => {
+      if(searching.length > 3) {
+          this.setState({
+            searchTerm : searching
+          })
+      } else {
+            this.setState({
+              searchTerm : ''
+            })
+      }
+  }
+
   render() {
+
+    let ebooks = [...this.state.ebooks];
+    let searching = this.state.searchTerm;
+    let result;
+
+    if(searching !== '') {
+        result = ebooks.filter(ebook => (
+          ebook.name.toLowerCase().indexOf( searching.toLowerCase() ) !== -1
+        ))
+    } else {
+        result = ebooks;
+    }
+
     return ( 
       <BrowserRouter>
       <div className="container">
@@ -31,13 +57,14 @@ class Router extends Component {
         <Switch>
           <Route exact path="/" render={() => (
               <Ebooks
-                  ebooks={this.state.ebooks}
+                  ebooks={result}
+                  searchingEbook={this.searchingEbook}
               />
           )} />
           <Route exact path="/about" component={About} />
           <Route exact path="/ebooks" render={ () => (
               <Ebooks
-                  ebooks={this.state.ebooks}
+                  ebooks={result}
               />
           )} />
           <Route exact path="/ebook/:ebookId" render={(props) => {
