@@ -1,0 +1,26 @@
+@media (min-width:480px) {
+  .aboutContainer {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-gap: 1rem;
+  }
+}
+
+.aboutContainer {
+  margin-top: 40px;
+}
+
+.aboutContainer .image img {
+  width: 100%;
+  /*padding-top: 10px;*/
+}
+
+.aboutContainer .content h2 {
+  border-bottom: 5px solid #ccc;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.aboutContainer .content p {
+  color: #666;
+  line-height: 1.5rem;
+}
