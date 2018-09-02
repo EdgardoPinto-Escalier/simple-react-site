@@ -1,0 +1,55 @@
+div.ebooks {
+  margin-top: 30px;
+}
+ul.ebooksList {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+ul.ebooksList li{
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+}
+
+@media  (min-width:768px) {
+  ul.ebooksList li{
+      float: left;
+      width: 50%;
+  }
+}
+
+ul.ebooksList li:nth-child(2n+1) {
+  clear: both;
+}
+ul.ebooksList li img {
+  border: 5px solid #ccc;
+  max-width: 100%;
+}
+ul.ebooksList li img:hover {
+  border: 5px solid #39383a;
+}
+ul.ebooksList li p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  margin:10px 0 0 0;
+}
+ul.ebooksList li p span {
+  color: #666;
+  font-size: 20px;
+}
+ul.ebooksList li a {
+  background-color: #39383a;
+  padding: 10px 40px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
