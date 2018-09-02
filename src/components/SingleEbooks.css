@@ -1,0 +1,30 @@
+@media (min-width: 480px) {
+  .ebookInfo {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2rem;
+  }
+} 
+
+.ebookInfo img {
+  border: 5px solid #ccc;
+  width: 100%;
+}
+.ebookInfo .info h2{
+  text-align: left;
+  text-transform: none;
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+.ebookInfo .info .price {
+  padding: 5px;
+  background-color: #ccc;
+  font-size: 30px;
+  color: #666;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.ebookInfo .info p {
+  color: #666;
+  line-height: 1.5rem;
+}

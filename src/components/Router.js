@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header';
+import NavBar from './NavBar';
 import Ebooks from './Ebooks';
 import About from './About';
 import Error from './Error';
-import dataEbooks from '../data/data.json';
 import SingleEbook from './SingleEbook';
+import dataEbooks from '../data/data.json';
+
 
 class Router extends Component {
 
@@ -24,7 +26,7 @@ class Router extends Component {
       <BrowserRouter>
       <div className="container">
         <Header />
-
+        <NavBar />
         <Switch>
           <Route exact path="/" render={() => (
               <Ebooks
@@ -33,7 +35,7 @@ class Router extends Component {
           )} />
           <Route exact path="/about" component={About} />
           <Route exact path="/ebook/:ebookId" render={(props) => {
-              let idEbook = props.location.pathname.replace('/ebook', '');
+              let idEbook = props.location.pathname.replace('/ebook/', '');
               return (
                   <SingleEbook
                       ebook={this.state.ebooks[idEbook]}
